@@ -11,11 +11,11 @@
 - The API must be ASP.Net core
 - Programming language must be C#
 <div>
-<image src="https://github.com/ilkersatur/Currency-Exchange-Tracking-Platform/blob/main/image/Create%20Database.gif?raw=true" width="300px"/>
+<image src="https://github.com/ilkersatur/Currency-Exchange-Tracking-Platform/blob/main/image/Create%20Database.gif?raw=true" width="200px"/>
 &nbsp &nbsp &nbsp &nbsp &nbsp 
-<image src="https://github.com/ilkersatur/Currency-Exchange-Tracking-Platform/blob/main/image/Get%20Daily%20Currency%20Data.gif?raw=true" width="300px"/>
-
-<image src="https://github.com/ilkersatur/Currency-Exchange-Tracking-Platform/blob/main/image/Get%20Last%202%20Months%20Data.gif?raw=true" width="300px" align="right"/>
+<image src="https://github.com/ilkersatur/Currency-Exchange-Tracking-Platform/blob/main/image/Get%20Daily%20Currency%20Data.gif?raw=true" width="200px"/>
+&nbsp &nbsp &nbsp &nbsp &nbsp 
+<image src="https://github.com/ilkersatur/Currency-Exchange-Tracking-Platform/blob/main/image/Get%20Last%202%20Months%20Data.gif?raw=true" width="200px"/>
 </div>
 
 ### Bussiness API
