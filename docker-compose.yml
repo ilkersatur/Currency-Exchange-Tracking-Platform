@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  dataapi:
+    image: ${DOCKER_REGISTRY-}dataapi
+    build:
+      context: .
+      dockerfile: DataAPI\Dockerfile
+
+  bussinessapi:
+    image: ${DOCKER_REGISTRY-}bussinessapi
+    build:
+      context: .
+      dockerfile: BussinessAPI\Dockerfile
+
+
+  dotnetproject:
+    image: ${DOCKER_REGISTRY-}dotnetproject
+    build:
+      context: .
+      dockerfile: DotnetProject\Dockerfile
+

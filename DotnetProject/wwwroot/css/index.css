@@ -1,0 +1,29 @@
+﻿body {
+    font: 12px Arial;
+    margin: 0;
+    padding: 0;
+}
+
+svg {
+    background-color: #FFF9DD;
+    padding: 30px;
+}
+
+path {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1;
+}
+
+.axis path, .axis line {
+    fill: none;
+    shape-rendering: crispEdges;
+    stroke: #BBB;
+    stroke-width: 1;
+}
+
+.axis text {
+    fill: #766;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 12px;
+}

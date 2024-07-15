@@ -1,0 +1,31 @@
+name: dockercompose3119530391928560654
+services:
+  bussinessapi:
+    build:
+      context: C:\Users\İlker\Desktop\CurrencyWebSite
+      dockerfile: BussinessAPI\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: bussinessapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+  dataapi:
+    build:
+      context: C:\Users\İlker\Desktop\CurrencyWebSite
+      dockerfile: DataAPI\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: dataapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      protocol: tcp
+networks:
+  default:
+    name: dockercompose3119530391928560654_default

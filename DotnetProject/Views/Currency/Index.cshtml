@@ -1,0 +1,113 @@
+﻿@model IEnumerable<DotnetProject.Models.Centralbankofturkey>
+
+<body>
+    <script src="site.js"></script>
+
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+
+
+    <style>
+        .box {
+            top:100px;
+        }
+
+            .box select {
+                background-color: #0563af;
+                color: white;
+                padding: 12px;
+                width: 250px;
+                border: none;
+                font-size: 20px;
+                box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+                -webkit-appearance: button;
+                appearance: button;
+                outline: none;
+                height:56px;
+            }
+
+            .box::before {
+                content: "\f13a";
+                font-family: FontAwesome;
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 20%;
+                height: 100%;
+                text-align: center;
+                font-size: 28px;
+                line-height: 45px;
+                color: rgba(255, 255, 255, 0.5);
+                background-color: rgba(255, 255, 255, 0.1);
+                pointer-events: none;
+            }
+
+            .box:hover::before {
+                color: rgba(255, 255, 255, 0.6);
+                background-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .box select option {
+                padding: 30px;
+            }
+
+        button {
+            appearance: none;
+            background: black;
+            border: 0;
+            color: #fff;
+            cursor: pointer;
+            font: inherit;
+            font-weight: 500;
+            line-height: 1;
+            padding: 1em 1.5em;
+            position: relative;
+            width: 200px;
+            transition: filter var(--motion-duration);
+        }
+
+        svg {
+            background-color: #FFF9DD;
+            padding: 30px;
+            position:absolute;
+            left:120px!important;
+        }
+
+        path {
+            fill: none;
+            stroke: black;
+            stroke-width: 0.7;
+        }
+
+        .axis path, .axis line {
+            fill: none;
+            shape-rendering: crispEdges;
+            stroke: #BBB;
+            stroke-width: 1;
+        }
+
+        .axis text {
+            fill: #766;
+            font-family: 'PT Sans Narrow', sans-serif;
+            font-size: 12px;
+        }
+    </style>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/style.css" rel="stylesheet">
+    <div class="box">
+    <select id="selected" asp-items="ViewBag.CurrencyName"></select>
+    <button onclick="getData()">SEARCH</button>
+    </div>
+</body>
